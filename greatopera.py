@@ -1,4 +1,6 @@
 """
+Big thanks to bkobe for his assistance in deciphering the registers I needed to send to
+
 This script just takes one argument and sets one of 4 options 
 
 the init argument initializes the operacake on first startup
