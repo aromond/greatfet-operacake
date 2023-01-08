@@ -9,6 +9,17 @@ A0<>A1 and B0<>B1
 A0<>A2 and B0<>B2
 A0<>A3 and B0<>B3
 A0<>A4 and B0<>B4
+
+The device Address is 0x18
+
+The register values to set ports are comprised of 8 bits. Set the 8 bits you want accordingly and then send it as a hex value via i2c
++---------------------------+--------+--------+--------+--------+-------------------------+-------------+------------+
+|             x             |   x    |   x    |   x    |   x    |            x            |      x      |     x      |
++---------------------------+--------+--------+--------+--------+-------------------------+-------------+------------+
+| gpio disable(1) enable(0) | A side | A side | B side | B side | Same(1) or Crossover(2) | LED Enable2 | LED Enable |
++---------------------------+--------+--------+--------+--------+-------------------------+-------------+------------+
+
+
 """
 import sys
 from greatfet import GreatFET
